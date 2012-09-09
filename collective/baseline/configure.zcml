@@ -8,8 +8,6 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="collective.baseline">
 
-  <include package=".browser" />
-
   <i18n:registerTranslations directory="locales" />
 
   <genericsetup:registerProfile
@@ -30,7 +28,7 @@
   <browser:viewlet
       name="collective.baseline"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".baseline.BaseLineViewlet"
+      class=".viewlet.BaseLineViewlet"
       template="viewlet.pt"
       layer=".layer.ILayer"
       permission="zope2.View"
