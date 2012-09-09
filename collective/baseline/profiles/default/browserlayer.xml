@@ -1,4 +1,4 @@
 <layers>
     <layer name="collective.baseline"
-           interface="collective.baseline.browser.interfaces.ILayer" />
+           interface="collective.baseline.layer.ILayer" />
 </layers>

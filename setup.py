@@ -7,7 +7,7 @@ setup(name='collective.baseline',
       version=version,
       description="Add a baseline to the header",
       long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+                       open("CHANGES.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
@@ -17,10 +17,10 @@ setup(name='collective.baseline',
         "Framework :: Plone :: 4.1",
         "Framework :: Plone :: 4.2",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='plone baseline',
+      author='JeanMichel FRANCOIS',
+      author_email='toutpt@gmail.com',
+      url='https://github.com/collective/collective.baseline',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
