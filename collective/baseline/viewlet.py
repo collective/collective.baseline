@@ -9,6 +9,10 @@ class BaseLineViewlet(common.ViewletBase):
     def update(self):
         super(BaseLineViewlet, self).update()
         self.registry = component.queryUtility(IRegistry)
+        portal = self.portal_state.portal()
+        self.site_title = portal.getProperty('title')
+        self.site_desc = portal.getProperty('description')
+
         self.baseline = u""
         if self.registry:
             try:
@@ -17,5 +21,4 @@ class BaseLineViewlet(common.ViewletBase):
                 pass
 
         if not self.baseline:
-            portal = self.portal_state.portal()
-            self.baseline = portal.getProperty('description')
+            self.baseline = self.site_desc
